@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisdom Ehirim</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.15.1/devicon.min.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+
+    <link rel="stylesheet" href="/styles.css">
+    
+</head>
+
+<body class="bg-slate-900 text-gray-100">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-slate-800/80 backdrop-blur-sm shadow-lg z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-blue-400">Wisdom Ehirim</span>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <a href="#about" class="text-gray-300 hover:text-blue-400 transition">About</a>
+                    <a href="#services" class="text-gray-300 hover:text-blue-400 transition">Services</a>
+                    <a href="#projects" class="text-gray-300 hover:text-blue-400 transition">Projects</a>
+                    <a href="#timeline" class="text-gray-300 hover:text-blue-400 transition">Timeline</a>
+                    <button id="downloadResume" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+                        <a href="https://drive.google.com/uc?export=view&id=1JsNVGzaGXkzH_sjzcOV2pGcSm_fki_2P" target="_blank">Resume</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-b from-slate-900 to-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div>
+                <h1 class="text-4xl font-bold text-blue-400 sm:text-5xl md:text-6xl">
+                    Wisdom Ehirim
+                </h1>
+                <p class="mt-3 text-xl text-gray-300 sm:mt-5">
+                    Backend Developer | Tech Writer | AI Enthusiast
+                </p>
+                <div class="mt-8 flex space-x-4">
+                    <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+                        Get in Touch
+                    </a>
+                    <a href="#projects" class="border border-blue-400 text-blue-400 px-6 py-3 rounded-lg hover:bg-blue-400 hover:text-white transition">
+                        View Projects
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-blue-400 mb-6">About Me</h2>
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        I'm a backend developer with expertise in building robust and scalable 
+                        server-side applications. I specialize in Python frameworks (Django, FastAPI, Flask) 
+                        and database technologies. As a software development consultant, I help businesses 
+                        architect efficient backend solutions. I regularly share my insights and experiences 
+                        through technical writing.
+                    </p>
+                </div>
+                <div id="tech-stack" class="icon-container relative h-[400px]">
+                    <!-- Icons will be dynamically added here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-blue-400 mb-16">Services I Offer</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-slate-800 p-6 rounded-lg shadow-lg hover:transform hover:scale-105 transition duration-300">
+                    <div class="text-blue-400 text-4xl mb-4">⚙️</div>
+                    <h3 class="text-xl font-bold mb-4">Backend Development</h3>
+                    <p class="text-gray-300">Robust and scalable backend solutions using Python frameworks and modern databases.</p>
+                    
+                </div>
+                <div class="bg-slate-800 p-6 rounded-lg shadow-lg hover:transform hover:scale-105 transition duration-300">
+                    <div class="text-blue-400 text-4xl mb-4">💡</div>
+                    <h3 class="text-xl font-bold mb-4">Web Services</h3>
+                    <p class="text-gray-300">Ecommerce, Health, Portfolio websites etc. Deployment and hosting of websites.</p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-lg shadow-lg hover:transform hover:scale-105 transition duration-300">
+                    <div class="text-blue-400 text-4xl mb-4">✍️</div>
+                    <h3 class="text-xl font-bold mb-4">Technical Writing</h3>
+                    <p class="text-gray-300">In-depth technical articles and documentation for developers, advice on backend architecture and system optimization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Timeline Section -->
+    <section id="projects" class="py-20 bg-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-blue-400 mb-16">Featured Projects</h2>
+            
+            <div id="projectsContainer" class="space-y-12">
+                <!-- Project items will be populated here dynamically -->
+            </div>
+        </div>
+    </section>
+        
+
+    <!-- Professional Timeline Section -->
+    <section id="timeline" class="py-20 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-blue-400 mb-6">Professional Journey</h2>
+            <p class="text-gray-300 text-center mb-16 max-w-3xl mx-auto">A chronological overview of my educational background, work experience, and achievements in the tech industry.</p>
+            
+            <!-- Timeline Navigation -->
+            <div class="flex justify-center mb-12">
+                <div class="inline-flex rounded-md shadow-sm bg-slate-800 p-1" role="group">
+                    <button type="button" class="timeline-filter px-4 py-2 text-sm font-medium rounded-md bg-blue-500 text-white focus:z-10 focus:outline-none" data-filter="all">
+                        All
+                    </button>
+                    <button type="button" class="timeline-filter px-4 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-slate-700 focus:z-10 focus:outline-none" data-filter="education">
+                        Education
+                    </button>
+                    <button type="button" class="timeline-filter px-4 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-slate-700 focus:z-10 focus:outline-none" data-filter="experience">
+                        Experience
+                    </button>
+                    <button type="button" class="timeline-filter px-4 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-slate-700 focus:z-10 focus:outline-none" data-filter="hackathon">
+                        Hackathons
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Main Timeline -->
+            <div class="relative timeline-container">
+                <!-- Timeline center line -->
+                <div class="absolute left-0 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-400 via-blue-500 to-blue-600 transform -translate-x-1/2"></div>
+                
+                <!-- Timeline Items -->
+                <div class="space-y-16">
+                    <!-- Work Experience 1 - HNG Internship -->
+                    <div class="timeline-item relative flex flex-col md:flex-row items-center" data-category="experience">
+                        <!-- Date Marker -->
+                        <div class="timeline-date absolute left-0 md:left-1/2 -translate-x-1/2 bg-slate-800 border-2 border-blue-400 text-blue-400 rounded-full px-3 py-1 font-semibold z-10">
+                            July 2024 - Sept 2024
+                        </div>
+                        
+                        <!-- Content Left Side (for even items on desktop) -->
+                        <div class="timeline-content flex-1 md:w-1/2 md:pr-12 pb-8 md:pb-0 md:text-right order-2 md:order-1 mt-8 md:mt-0">
+                            <div class="bg-slate-800 p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 opacity-90 hover:opacity-100">
+                                <h3 class="text-xl font-bold text-blue-400">Backend Developer Intern</h3>
+                                <h4 class="text-gray-300 font-semibold mt-1">HNG Internship</h4>
+                                <p class="text-gray-400 mt-4">Developed backend services focusing on API design and implementation.</p>
+                                <div class="mt-4 flex flex-wrap gap-2 justify-end">
+                                    <span class="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm">Django</span>
+                                    <span class="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm">NodeJs</span>
+                                    <span class="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm">Git</span>
+                                </div>
+                                <div class="mt-4 pt-4 border-t border-slate-700">
+                                    <ul class="text-gray-300 list-disc list-inside text-sm">
+                                        <li>Collaborated with cross-functional teams on feature implementation</li>
+                                        <li>Designed and developed RESTful APIs for web applications</li>
+                                        <li>Designed and made proper API documentations</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Timeline Circle -->
+                        <div class="timeline-circle absolute left-0 md:left-1/2 top-0 -translate-x-1/2 mt-6 md:mt-0 w-4 h-4 bg-blue-400 rounded-full border-4 border-slate-900 z-20"></div>
+                        
+                        <!-- Content Right Side (empty for even items on desktop) -->
+                        <div class="flex-1 md:w-1/2 md:pl-12 order-1 md:order-2">
+                            <!-- Intentionally empty for layout balance -->
+                        </div>
+                    </div>
+                    
+                    <!-- Education 1 - CS50 Harvard -->
+                    <div class="timeline-item relative flex flex-col md:flex-row items-center" data-category="education">
+                        <!-- Date Marker -->
+                        <div class="timeline-date absolute left-0 md:left-1/2 -translate-x-1/2 bg-slate-800 border-2 border-blue-400 text-blue-400 rounded-full px-3 py-1 font-semibold z-10">
+                            2023
+                        </div>
+                        
+                        <!-- Content Left Side (empty for odd items on desktop) -->
+                        <div class="flex-1 md:w-1/2 md:pr-12 order-2 md:order-1">
+                            <!-- Intentionally empty for layout balance -->
+                        </div>
+                        
+                        <!-- Timeline Circle -->
+                        <div class="timeline-circle absolute left-0 md:left-1/2 top-0 -translate-x-1/2 mt-6 md:mt-0 w-4 h-4 bg-blue-400 rounded-full border-4 border-slate-900 z-20"></div>
+                        
+                        <!-- Content Right Side (for odd items on desktop) -->
+                        <div class="timeline-content flex-1 md:w-1/2 md:pl-12 pb-8 md:pb-0 order-1 md:order-2 mt-8 md:mt-0">
+                            <div class="bg-slate-800 p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 opacity-90 hover:opacity-100">
+                                <h3 class="text-xl font-bold text-blue-400">CS50: Introduction to Computer Science</h3>
+                                <h4 class="text-gray-300 font-semibold mt-1">Harvard University (Online)</h4>
+                                <p class="text-gray-400 mt-4">Completed Harvard's renowned introductory course covering algorithms, data structures, and foundational programming concepts.</p>
+                                <div class="mt-4 pt-4 border-t border-slate-700">
+                                    <ul class="text-gray-300 list-disc list-inside text-sm">
+                                        <li>Mastered concepts in C, Python, SQL, and web development</li>
+                                        <li>Developed problem-solving skills through challenging weekly assignments</li>
+                                        <li>Created a final project implementing a real-time web-chat application using flask and socketIo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Work Experience 2 - NAMA Internship -->
+                    <div class="timeline-item relative flex flex-col md:flex-row items-center" data-category="experience">
+                        <!-- Date Marker -->
+                        <div class="timeline-date absolute left-0 md:left-1/2 -translate-x-1/2 bg-slate-800 border-2 border-blue-400 text-blue-400 rounded-full px-3 py-1 font-semibold z-10">
+                            January 2025 - February 2025
+                        </div>
+                        
+                        <!-- Content Left Side (for even items on desktop) -->
+                        <div class="timeline-content flex-1 md:w-1/2 md:pr-12 pb-8 md:pb-0 md:text-right order-2 md:order-1 mt-8 md:mt-0">
+                            <div class="bg-slate-800 p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 opacity-90 hover:opacity-100">
+                                <h3 class="text-xl font-bold text-blue-400">Software Intern</h3>
+                                <h4 class="text-gray-300 font-semibold mt-1">NAMA (Nigerian Airspace Management Agency)</h4>
+                                <p class="text-gray-400 mt-4">Interned at the Surveillance department. Learnt techniques needed in the maintenance and troubleshooting of IT systems and infrastructure within the agency.</p>
+                                <div class="mt-4 flex flex-wrap gap-2 justify-end">
+                                    <span class="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm">Networking</span>
+                                    <span class="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm">Linux and Redhart Os</span>
+                                    <span class="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm">Technical Support</span>
+                                </div>
+                                <div class="mt-4 pt-4 border-t border-slate-700">
+                                    <ul class="text-gray-300 list-disc list-inside text-sm">
+                                        <li>Provided support to staff across different departments</li>
+                                        <li>Assisted in daily data archivals</li>
+                                        <li>Documented technical procedures and labelled media with archived data</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Timeline Circle -->
+                        <div class="timeline-circle absolute left-0 md:left-1/2 top-0 -translate-x-1/2 mt-6 md:mt-0 w-4 h-4 bg-blue-400 rounded-full border-4 border-slate-900 z-20"></div>
+                        
+                        <!-- Content Right Side (empty for even items on desktop) -->
+                        <div class="flex-1 md:w-1/2 md:pl-12 order-1 md:order-2">
+                            <!-- Intentionally empty for layout balance -->
+                        </div>
+                    </div>
+                    
+                    <!-- Hackathon - Hack4Futo -->
+                    <div class="timeline-item relative flex flex-col md:flex-row items-center" data-category="hackathon">
+                        <!-- Date Marker -->
+                        <div class="timeline-date absolute left-0 md:left-1/2 -translate-x-1/2 bg-slate-800 border-2 border-blue-400 text-blue-400 rounded-full px-3 py-1 font-semibold z-10">
+                            November 2024
+                        </div>
+                        
+                        <!-- Content Left Side (empty for odd items on desktop) -->
+                        <div class="flex-1 md:w-1/2 md:pr-12 order-2 md:order-1">
+                            <!-- Intentionally empty for layout balance -->
+                        </div>
+                        
+                        <!-- Timeline Circle -->
+                        <div class="timeline-circle absolute left-0 md:left-1/2 top-0 -translate-x-1/2 mt-6 md:mt-0 w-4 h-4 bg-blue-400 rounded-full border-4 border-slate-900 z-20"></div>
+                        
+                        <!-- Content Right Side (for odd items on desktop) -->
+                        <div class="timeline-content flex-1 md:w-1/2 md:pl-12 pb-8 md:pb-0 order-1 md:order-2 mt-8 md:mt-0">
+                            <div class="bg-slate-800 p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 opacity-90 hover:opacity-100">
+                                <div class="absolute -top-2 -right-2 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">
+                                    🏆 5th Place
+                                </div>
+                                <h3 class="text-xl font-bold text-blue-400">Hack4Futo</h3>
+                                <h4 class="text-gray-300 font-semibold mt-1">Team ScholarHive</h4>
+                                <p class="text-gray-400 mt-4">Led a team to develop a decentralized educational platform addressing the issues involved in receiving scholarhips and grants. This is a platform connecting scholarship providers and students seeking for scholarships.</p>
+                                <div class="mt-4 flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm">Python</span>
+                                    <span class="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm">Django</span>
+                                    <span class="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm">React</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Education 2 - NIIT Port Harcourt -->
+                    <div class="timeline-item relative flex flex-col md:flex-row items-center" data-category="education">
+                        <!-- Date Marker -->
+                        <div class="timeline-date absolute left-0 md:left-1/2 -translate-x-1/2 bg-slate-800 border-2 border-blue-400 text-blue-400 rounded-full px-3 py-1 font-semibold z-10">
+                            2022
+                        </div>
+                        
+                        <!-- Content Left Side (for even items on desktop) -->
+                        <div class="timeline-content flex-1 md:w-1/2 md:pr-12 pb-8 md:pb-0 md:text-right order-2 md:order-1 mt-8 md:mt-0">
+                            <div class="bg-slate-800 p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 opacity-90 hover:opacity-100">
+                                <h3 class="text-xl font-bold text-blue-400">Python Development Program</h3>
+                                <h4 class="text-gray-300 font-semibold mt-1">NIIT Port Harcourt</h4>
+                                <p class="text-gray-400 mt-4">Completed training in programming fundamentals and practicals</p>
+                                <div class="mt-4 pt-4 border-t border-slate-700">
+                                    <ul class="text-gray-300 list-disc list-inside text-sm">
+                                        <li>Gained proficiency in programming and OOP concepts</li>
+                                        <li>Completed mini tasks in Webscrapping and Third-party APIs</li>
+                                        <li>Developed a Currency Converter using Tkinter and Openexchange API as final project</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Timeline Circle -->
+                        <div class="timeline-circle absolute left-0 md:left-1/2 top-0 -translate-x-1/2 mt-6 md:mt-0 w-4 h-4 bg-blue-400 rounded-full border-4 border-slate-900 z-20"></div>
+                        
+                        <!-- Content Right Side (empty for even items on desktop) -->
+                        <div class="flex-1 md:w-1/2 md:pl-12 order-1 md:order-2">
+                            <!-- Intentionally empty for layout balance -->
+                        </div>
+                    </div>
+                    
+                    <!-- Education 3 - Software Engineering at FUTO -->
+                    <div class="timeline-item relative flex flex-col md:flex-row items-center" data-category="education">
+                        <!-- Date Marker -->
+                        <div class="timeline-date absolute left-0 md:left-1/2 -translate-x-1/2 bg-slate-800 border-2 border-blue-400 text-blue-400 rounded-full px-3 py-1 font-semibold z-10">
+                            2023 - Present
+                        </div>
+                        
+                        <!-- Content Left Side (empty for odd items on desktop) -->
+                        <div class="flex-1 md:w-1/2 md:pr-12 order-2 md:order-1">
+                            <!-- Intentionally empty for layout balance -->
+                        </div>
+                        
+                        <!-- Timeline Circle -->
+                        <div class="timeline-circle absolute left-0 md:left-1/2 top-0 -translate-x-1/2 mt-6 md:mt-0 w-4 h-4 bg-blue-400 rounded-full border-4 border-slate-900 z-20"></div>
+                        
+                        <!-- Content Right Side (for odd items on desktop) -->
+                        <div class="timeline-content flex-1 md:w-1/2 md:pl-12 pb-8 md:pb-0 order-1 md:order-2 mt-8 md:mt-0">
+                            <div class="bg-slate-800 p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 opacity-90 hover:opacity-100">
+                                <h3 class="text-xl font-bold text-blue-400">B.Tech. Software Engineering</h3>
+                                <h4 class="text-gray-300 font-semibold mt-1">Federal University of Technology, Owerri (FUTO)</h4>
+                                <p class="text-gray-400 mt-4">Coursework done: Software Requirements Engineering, Data Science, Software Construction and Methodologies.</p>
+                                <div class="mt-4 pt-4 border-t border-slate-700">
+                                    <ul class="text-gray-300 list-disc list-inside text-sm">
+                                        <li>Projects: Designed an SRS document for an online store</li>
+                                        <li>Active member of the university's tech community</li>
+                                        <li>Participated in multiple programming competitions and hackathons</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Timeline End Marker -->
+            <div class="flex justify-center mt-12">
+                <div class="w-3 h-3 bg-blue-400 rounded-full animate-ping"></div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-slate-800">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-blue-400 mb-16">Get in Touch</h2>
+            <form action="https://formspree.io/f/xgvogkee" method="POST" class="space-y-6">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-300">Name</label>
+                    <input type="text" id="name" name="name" 
+                           class="mt-1 block w-full rounded-md bg-slate-700 border-gray-600 text-white shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-300">Email</label>
+                    <input type="email" id="email" name="email" 
+                           class="mt-1 block w-full rounded-md bg-slate-700 border-gray-600 text-white shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-300">Message</label>
+                    <textarea id="message" name="message" rows="4" 
+                              class="mt-1 block w-full rounded-md bg-slate-700 border-gray-600 text-white shadow-sm focus:border-blue-500 focus:ring-blue-500"></textarea>
+                </div>
+                <div>
+                    <button type="submit" 
+                            class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+            
+        </div>
+    </section>
+
+    <script>
+        // Tech Stack Icons Animation
+        const techStack = [
+            { name: 'Django', icon: 'devicon-django-plain' },
+            { name: 'Flask', icon: 'devicon-flask-original' },
+            { name: 'PostgreSQL', icon: 'devicon-postgresql-plain' },
+            { name: 'Firebase', icon: 'devicon-firebase-plain' },
+            { name: 'JavaScript', icon: 'devicon-javascript-plain' },
+            { name: 'C++', icon: 'devicon-cplusplus-plain' },
+            { name: 'Java', icon: 'devicon-java-plain' },
+            { name: 'Git', icon: 'devicon-git-plain' },
+            { name: 'GitHub', icon: 'devicon-github-original' }
+        ];
+
+        function createFloatingIcons() {
+            const container = document.getElementById('tech-stack');
+            techStack.forEach((tech, index) => {
+                const icon = document.createElement('div');
+                icon.className = `floating-icon absolute`;
+                icon.style.animation = `float ${3 + Math.random() * 2}s ease-in-out infinite`;
+                icon.style.animationDelay = `${Math.random() * 2}s`;
+                icon.style.left = `${Math.random() * 80}%`;
+                icon.style.top = `${Math.random() * 80}%`;
+                icon.innerHTML = `
+                    <div class="text-center">
+                        <i class="${tech.icon} text-4xl text-blue-400"></i>
+                        <div class="text-sm mt-2 text-gray-300">${tech.name}</div>
+                    </div>
+                `;
+                container.appendChild(icon);
+            });
+        }
+
+        // Project Timeline Data Structure with Google X,Y,Z format
+        const projects = [
+            {
+                name: "ScholarHive",
+                impact: "Enabled students to apply for scholarships seamlessly, while providers could manage applications efficiently. Improved accessibility to scholarship opportunities.",
+                execution: "Designed and implemented a secure backend system using Django and PostgreSQL. Built custom authentication and role-based access control.",
+                role: "Led backend development, handling authentication, authorization, scholarship management logic, and database architecture.",
+                technologies: ["Django", "DRF", "PostgreSQL", "React"],
+                github: "https://github.com/WisdomEhirim06/ScholarHive",
+                demo: "https://scholarhive.onrender.com/"
+            },
+            {
+                name: "Ideator",
+                impact: "Helped users brainstorm creative ideas efficiently with AI-driven suggestions.",
+                execution: "Built a Flask-based API with a lightweight front-end to deliver randomized, user-tailored prompts.",
+                role: "Full-stack developer responsible for API design and front-end integration.",
+                technologies: ["Flask", "OpenAI API", "Tailwind CSS"],
+                github: "https://github.com/username/ideator",
+                demo: "https://ideator-sable.vercel.app/"
+            },
+            {
+                name: "Auth System",
+                impact: "Improved security and user authentication experience with multi-factor authentication.",
+                execution: "Developed a JWT-based authentication system with OAuth integration.",
+                role: "Backend developer handling authentication logic and security enhancements.",
+                technologies: ["Node.js", "Express", "MongoDB", "JWT"],
+                github: "https://github.com/WisdomEhirim06",
+                demo: "https://github.com/WisdomEhirim06"
+            }
+        ];
+
+        const projectsContainer = document.getElementById("projectsContainer");
+
+        projects.forEach(project => {
+            const projectHTML = `
+                <div class="bg-slate-700 rounded-lg p-6 hover:transform hover:scale-[1.02] transition duration-300">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
+                        <h3 class="text-2xl font-bold text-blue-400">${project.name}</h3>
+                        <div class="flex space-x-4 mt-4 md:mt-0">
+                            <a href="${project.github}" class="flex items-center space-x-2 text-gray-300 hover:text-blue-400 transition">
+                                <i class="devicon-github-original"></i>
+                                <span>Repository</span>
+                            </a>
+                            <a href="${project.demo}" class="flex items-center space-x-2 text-gray-300 hover:text-blue-400 transition">
+                            <i class="devicon-github-original"></i>
+                            <span>Live URL</span>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-slate-800 p-4 rounded-lg">
+                            <h4 class="font-semibold text-blue-400 mb-2">Impact</h4>
+                            <p class="text-gray-300">${project.impact}</p>
+                        </div>
+                        <div class="bg-slate-800 p-4 rounded-lg">
+                            <h4 class="font-semibold text-blue-400 mb-2">Execution</h4>
+                            <p class="text-gray-300">${project.execution}</p>
+                        </div>
+                        <div class="bg-slate-800 p-4 rounded-lg">
+                            <h4 class="font-semibold text-blue-400 mb-2">Role</h4>
+                            <p class="text-gray-300">${project.role}</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        ${project.technologies.map(tech => `<span class="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm">${tech}</span>`).join('')}
+                    </div>
+                </div>
+            `;
+            projectsContainer.innerHTML += projectHTML;
+        });
+
+        // Add this to your existing script section
+
+        // Timeline Journey
+        function initTimelineFilters() {
+            const filterButtons = document.querySelectorAll('.timeline-filter');
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            
+            // Initialize AOS (Animate on Scroll)
+            initAOS();
+            
+            // Add initial animation classes
+            timelineItems.forEach(item => {
+                item.classList.add('transform', 'transition-all', 'duration-700');
+                const content = item.querySelector('.timeline-content');
+                if (content) {
+                    content.setAttribute('data-aos', 'fade-up');
+                    content.setAttribute('data-aos-duration', '800');
+                }
+            });
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Update active button styles
+                    filterButtons.forEach(btn => {
+                        btn.classList.remove('bg-blue-500', 'text-white');
+                        btn.classList.add('text-gray-300', 'hover:text-white', 'hover:bg-slate-700');
+                    });
+                    
+                    button.classList.remove('text-gray-300', 'hover:text-white', 'hover:bg-slate-700');
+                    button.classList.add('bg-blue-500', 'text-white');
+                    
+                    const filterValue = button.getAttribute('data-filter');
+                    
+                    // Filter timeline items with animation
+                    timelineItems.forEach(item => {
+                        // Reset any existing transforms
+                        item.style.transform = '';
+                        item.style.opacity = '';
+                        
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            // Show matching items with animation
+                            gsap.to(item, {
+                                opacity: 1,
+                                height: 'auto',
+                                scale: 1,
+                                duration: 0.4,
+                                ease: "power1.out",
+                                onStart: function() {
+                                    item.style.display = 'flex';
+                                }
+                            });
+                        } else {
+                            // Hide non-matching items with animation
+                            gsap.to(item, {
+                                opacity: 0,
+                                height: 0,
+                                scale: 0.95,
+                                duration: 0.4,
+                                ease: "power1.in",
+                                onComplete: function() {
+                                    item.style.display = 'none';
+                                }
+                            });
+                        }
+                    });
+                    
+                    // Refresh AOS animations
+                    if (typeof AOS !== 'undefined') {
+                        setTimeout(() => {
+                            AOS.refresh();
+                        }, 500);
+                    }
+                });
+            });
+            
+            // Add scroll trigger animations for timeline items
+            if (typeof gsap !== 'undefined' && gsap.ScrollTrigger) {
+                timelineItems.forEach((item, index) => {
+                    gsap.from(item.querySelector('.timeline-content'), {
+                        y: 60,
+                        opacity: 0,
+                        duration: 0.8,
+                        scrollTrigger: {
+                            trigger: item,
+                            start: "top 80%",
+                            toggleActions: "play none none none"
+                        },
+                        delay: index * 0.1
+                    });
+                    
+                    gsap.from(item.querySelector('.timeline-circle'), {
+                        scale: 0,
+                        duration: 0.5,
+                        scrollTrigger: {
+                            trigger: item,
+                            start: "top 80%",
+                            toggleActions: "play none none none"
+                        },
+                        delay: 0.2 + (index * 0.1)
+                    });
+                    
+                    gsap.from(item.querySelector('.timeline-date'), {
+                        x: index % 2 === 0 ? -30 : 30,
+                        opacity: 0,
+                        duration: 0.5,
+                        scrollTrigger: {
+                            trigger: item,
+                            start: "top 80%",
+                            toggleActions: "play none none none"
+                        },
+                        delay: 0.3 + (index * 0.1)
+                    });
+                });
+            }
+        }
+
+        // Initialize AOS (Animate on Scroll) library if not already loaded
+        function initAOS() {
+            if (typeof AOS === 'undefined') {
+                // Load AOS library
+                const link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css';
+                document.head.appendChild(link);
+                
+                const script = document.createElement('script');
+                script.src = 'https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js';
+                script.onload = function() {
+                    AOS.init({
+                        duration: 800,
+                        easing: 'ease-in-out',
+                        once: true
+                    });
+                };
+                document.body.appendChild(script);
+            } else {
+                AOS.init({
+                    duration: 800,
+                    easing: 'ease-in-out',
+                    once: true
+                });
+            }
+        }
+
+
+
+        const styleElement = document.createElement('style');
+        styleElement.textContent = `
+
+        `;
+        document.head.appendChild(styleElement);
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            createFloatingIcons();
+            // Add to your existing initialization code
+            initTimelineFilters();
+        
+        
+        
+            // Add scroll observer for timeline items
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-fadeIn');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.2 });
+            
+            timelineItems.forEach(item => {
+                observer.observe(item);
+            });
+        });
+    </script>
+</body>
+</html>

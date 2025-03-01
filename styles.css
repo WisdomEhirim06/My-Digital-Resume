@@ -1,0 +1,60 @@
+.floating-icon {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+  }
+  
+  .icon-container {
+    perspective: 1000px;
+  }
+  
+  .dark-theme {
+    --bg-primary: #0f172a;
+    --text-primary: #e2e8f0;
+    --bg-secondary: #1e293b;
+    --accent-color: #3b82f6;
+  }
+
+    @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.timeline-item {
+    opacity: 0;
+}
+
+.timeline-date {
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover .timeline-date {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+}
+
+.timeline-item:nth-child(odd):hover .timeline-date {
+    transform: scale(1.1) translateX(5px);
+}
+
+.timeline-item:nth-child(even):hover .timeline-date {
+    transform: scale(1.1) translateX(-5px);
+}
+
+.timeline-circle {
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover .timeline-circle {
+    transform: scale(1.5) translateX(-33%);
+    background-color: #60a5fa;
+    box-shadow: 0 0 12px rgba(59, 130, 246, 0.8);
+}
