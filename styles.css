@@ -101,10 +101,11 @@
     }
     
     /* Fix timeline center line position for mobile */
-    .timeline-container .absolute.left-0.md\\:left-1\\/2 {
-      left: 2rem !important;
-      transform: none !important;
+    .timeline-container .absolute.left-0.md\:left-1\/2 {
+        left: 2rem !important;
+        transform: none !important;
     }
+    
     
     /* Timeline item layout for mobile */
     .timeline-item {
